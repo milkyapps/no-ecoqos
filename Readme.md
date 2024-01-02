@@ -21,8 +21,8 @@ cargo install --git https://github.com/milkyapps/no-ecoqos
 
 # schedule to run periodically
 
-```
-schtasks /create /sc minute /mo 1 /tn "No EcoQos" /tr C:/Users/<YOUR USER>/.cargo/bin/no-ecoqos.exe
+```ps1
+powershell> schtasks /create /sc minute /mo 1 /tn "No EcoQos" /tr (get-command no-ecoqos).Path
 ```
 
 A terminal will "blink" in the screen.
