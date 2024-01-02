@@ -18,3 +18,11 @@ Options:
 ```
 cargo install --git https://github.com/milkyapps/no-ecoqos
 ```
+
+# schedule to run periodically
+
+```
+schtasks /create /sc minute /mo 1 /tn "No EcoQos" /tr C:/Users/xunil/.cargo/bin/no-ecoqos.exe
+```
+
+A terminal will "blink" in the screen.
