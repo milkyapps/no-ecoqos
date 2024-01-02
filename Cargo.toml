@@ -1,0 +1,8 @@
+[package]
+name = "no-ecoqos"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4.12", features = ["derive"] }
+windows = { version = "*", features = ["Win32_System", "Win32_System_ProcessStatus", "Win32_Foundation", "Win32_System_Threading", "Win32_Security"] }
