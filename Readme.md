@@ -12,3 +12,9 @@ Options:
   -q, --quiet        Dont print anything
   -h, --help         Print help
 ```
+
+# install
+
+```
+cargo install --git https://github.com/milkyapps/no-ecoqos
+```
